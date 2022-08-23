@@ -1,0 +1,43 @@
+<ol class="mt-3">
+  <li>Addition</li>
+  <li>Subtraction</li>
+  <li>Multiplication</li>
+  <li>Division</li>
+  <li>Modulus</li>
+</ol>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="form-group">
+        <label>First Number:</label>
+        <input type="number" class="form-control" (keyup)="calculate()"  [(ngModel)]="num1" />
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <label>Second Number:</label>
+        <input type="number" class="form-control" (keyup)="calculate()" [(ngModel)]="num2" />
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="form-group">
+        <label>Enter Choice:</label>
+        <input type="number" class="form-control" (keyup)="calculate()" [(ngModel)]="oper" />
+      </div>
+    </div>
+    <!-- <button type="submit" (click)="calculate()">CALCULATE</button> -->
+  </div>
+  <br>
+  <p>
+    First Number:<strong class="text-uppercase">{{ num1 }}</strong>
+  </p>
+  <p>
+    Secon Number:<strong class="text-uppercase">{{ num2 }}</strong>
+  </p>
+  <p>
+    Result:<strong class="text-uppercase">{{ result }}</strong>
+  </p>
+</div>
